@@ -1,0 +1,822 @@
+00:26:02 **** Clean-only build of configuration Debug for project tp3_linux ****
+make clean 
+rm -rf  ./Controller.o ./Employee.o ./main.o ./parser.o  ./Controller.d ./Employee.d ./main.d ./parser.d  TP3
+ 
+00:26:03 **** Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+../Controller.c:7:10: fatal error: utn.h: No existe el archivo o el directorio
+subdir.mk:27: recipe for target 'Controller.o' failed
+ #include "utn.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:27:37 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+../Controller.c: In function ‘controller_addEmployee’:
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+subdir.mk:30: recipe for target 'Controller.o' failed
+../Controller.c:83:13: warning: implicit declaration of function ‘employee_generaId’; did you mean ‘employee_getId’? [-Wimplicit-function-declaration]
+     auxId = employee_generaId();
+             ^~~~~~~~~~~~~~~~~
+             employee_getId
+../Controller.c:91:6: warning: implicit declaration of function ‘employee_setSueldoStr’; did you mean ‘employee_setSueldo’? [-Wimplicit-function-declaration]
+     !employee_setSueldoStr(employee,auxSueldoStr) &&
+      ^~~~~~~~~~~~~~~~~~~~~
+      employee_setSueldo
+../Controller.c:92:6: warning: implicit declaration of function ‘employee_setHorasTrabajadasStr’; did you mean ‘employee_setHorasTrabajadas’? [-Wimplicit-function-declaration]
+     !employee_setHorasTrabajadasStr(employee,auxHorasTrabajoStr))
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      employee_setHorasTrabajadas
+../Controller.c: In function ‘controller_editEmployee’:
+../Controller.c:132:14: warning: implicit declaration of function ‘employee_findEmployeeById’ [-Wimplicit-function-declaration]
+   posicion = employee_findEmployeeById(pArrayListEmployee, auxId);
+              ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Controller.c: In function ‘controller_ListEmployee’:
+../Controller.c:233:4: warning: implicit declaration of function ‘employee_getHorasTrabajadasS’; did you mean ‘employee_getHorasTrabajadas’? [-Wimplicit-function-declaration]
+    employee_getHorasTrabajadasS(employee, &auxHorasTrabajo);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    employee_getHorasTrabajadas
+../Controller.c: In function ‘controller_sortEmployee’:
+../Controller.c:259:31: error: ‘controller_comparisonString’ undeclared (first use in this function); did you mean ‘controller_loadFromBinary’?
+   ll_sort(pArrayListEmployee, controller_comparisonString,1);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               controller_loadFromBinary
+../Controller.c:259:31: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:29:27 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+../Controller.c: In function ‘controller_editEmployee’:
+../Controller.c:132:14: warning: implicit declaration of function ‘employee_findEmployeeById’; did you mean ‘employee_generaId’? [-Wimplicit-function-declaration]
+   posicion = employee_findEmployeeById(pArrayListEmployee, auxId);
+              ^~~~~~~~~~~~~~~~~~~~~~~~~
+              employee_generaId
+../Controller.c: In function ‘controller_ListEmployee’:
+../Controller.c:233:4: warning: implicit declaration of function ‘employee_getHorasTrabajadasS’; did you mean ‘employee_getHorasTrabajadas’? [-Wimplicit-function-declaration]
+    employee_getHorasTrabajadasS(employee, &auxHorasTrabajo);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    employee_getHorasTrabajadas
+../Controller.c: In function ‘controller_sortEmployee’:
+../Controller.c:259:31: error: ‘controller_comparisonString’ undeclared (first use in this function); did you mean ‘controller_loadFromBinary’?
+   ll_sort(pArrayListEmployee, controller_comparisonString,1);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               controller_loadFromBinary
+../Controller.c:259:31: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Controller.o] Error 1
+subdir.mk:30: recipe for target 'Controller.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+00:30:17 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+../Controller.c: In function ‘controller_editEmployee’:
+../Controller.c:132:14: warning: implicit declaration of function ‘employee_findEmployeeById’; did you mean ‘employee_generaId’? [-Wimplicit-function-declaration]
+   posicion = employee_findEmployeeById(pArrayListEmployee, auxId);
+              ^~~~~~~~~~~~~~~~~~~~~~~~~
+              employee_generaId
+../Controller.c: In function ‘controller_ListEmployee’:
+../Controller.c:233:4: warning: implicit declaration of function ‘employee_getHorasTrabajadasS’; did you mean ‘employee_getHorasTrabajadas’? [-Wimplicit-function-declaration]
+    employee_getHorasTrabajadasS(employee, &auxHorasTrabajo);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    employee_getHorasTrabajadas
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building file: ../utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"utn.d" -MT"utn.o" -o "utn.o" "../utn.c"
+../utn.c: In function ‘utn_getDate’:
+../utn.c:613:13: warning: format not a string literal and no format arguments [-Wformat-security]
+             printf(msg);
+             ^~~~~~
+Finished building: ../utn.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+./Controller.o: En la función `controller_ListEmployee':
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../Controller.c:233: referencia a `employee_getHorasTrabajadasS' sin definir
+makefile:29: recipe for target 'tp3_linux' failed
+collect2: error: ld returned 1 exit status
+make: *** [tp3_linux] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:31:15 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+../Controller.c: In function ‘controller_editEmployee’:
+../Controller.c:132:14: warning: implicit declaration of function ‘employee_findEmployeeById’; did you mean ‘employee_generaId’? [-Wimplicit-function-declaration]
+   posicion = employee_findEmployeeById(pArrayListEmployee, auxId);
+              ^~~~~~~~~~~~~~~~~~~~~~~~~
+              employee_generaId
+Finished building: ../Controller.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:31:47 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:32:37 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:32:48 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+00:33:59 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:34:01 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+00:36:24 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:36:27 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+00:38:32 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:38:34 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+00:39:34 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:39:37 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+00:41:03 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:41:07 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+00:42:08 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:42:10 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+00:46:14 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+../Controller.c: In function ‘controller_addEmployee’:
+../Controller.c:81:3: warning: implicit declaration of function ‘__fpurge’; did you mean ‘__wur’? [-Wimplicit-function-declaration]
+   __fpurge(stdin);
+   ^~~~~~~~
+   __wur
+Finished building: ../Controller.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:46:35 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+00:46:37 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+01:01:13 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+In file included from ../Controller.c:5:0:
+../parser.h:1:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                                           ^~~~~~~~~~
+../parser.h:2:45: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+                                             ^~~~~~~~~~
+../Controller.c: In function ‘controller_loadFromText’:
+../Controller.c:31:13: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+         if(!parser_EmployeeFromText(pFile , pArrayListEmployee))
+             ^~~~~~~~~~~~~~~~~~~~~~~
+../Controller.c: In function ‘controller_loadFromBinary’:
+../Controller.c:60:13: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+         if(!parser_EmployeeFromBinary(pFile, pArrayListEmployee))
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Controller.c: In function ‘controller_sortEmployee’:
+../Controller.c:271:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+make: *** [Controller.o] Error 1
+subdir.mk:30: recipe for target 'Controller.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+01:02:02 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+In file included from ../Controller.c:5:0:
+../parser.h:1:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                                           ^~~~~~~~~~
+../parser.h:2:45: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+                                             ^~~~~~~~~~
+../Controller.c: In function ‘controller_loadFromText’:
+../Controller.c:31:13: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+         if(!parser_EmployeeFromText(pFile , pArrayListEmployee))
+             ^~~~~~~~~~~~~~~~~~~~~~~
+../Controller.c: In function ‘controller_loadFromBinary’:
+../Controller.c:60:13: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+         if(!parser_EmployeeFromBinary(pFile, pArrayListEmployee))
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Controller.o] Error 1
+subdir.mk:30: recipe for target 'Controller.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+01:03:10 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+In file included from ../Controller.c:5:0:
+../parser.h:1:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                                           ^~~~~~~~~~
+../parser.h:2:45: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+                                             ^~~~~~~~~~
+../Controller.c: In function ‘controller_loadFromText’:
+../Controller.c:31:13: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+         if(!parser_EmployeeFromText(pFile , pArrayListEmployee))
+             ^~~~~~~~~~~~~~~~~~~~~~~
+../Controller.c: In function ‘controller_loadFromBinary’:
+../Controller.c:60:13: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+         if(!parser_EmployeeFromBinary(pFile, pArrayListEmployee))
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Controller.o] Error 1
+subdir.mk:30: recipe for target 'Controller.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+01:03:53 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+../Employee.c: In function ‘employee_setIdStr’:
+../Employee.c:67:12: warning: implicit declaration of function ‘isValidNumber’ [-Wimplicit-function-declaration]
+         if(isValidNumber(id))
+            ^~~~~~~~~~~~~
+../Employee.c: In function ‘employee_setNombre’:
+../Employee.c:95:12: warning: implicit declaration of function ‘isValidName’ [-Wimplicit-function-declaration]
+         if(isValidName(nombre))
+            ^~~~~~~~~~~
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:28:5: warning: implicit declaration of function ‘clrscr’ [-Wimplicit-function-declaration]
+     clrscr();
+     ^~~~~~
+../main.c:42:6: warning: implicit declaration of function ‘utn_getInt’; did you mean ‘utn_getDate’? [-Wimplicit-function-declaration]
+      utn_getInt(&option,"\nSeleccione opcion: ","Opcion invalida",1,10,10);
+      ^~~~~~~~~~
+      utn_getDate
+../main.c:48:17: warning: implicit declaration of function ‘controller_lastIdEmployee’; did you mean ‘controller_ListEmployee’? [-Wimplicit-function-declaration]
+                 controller_lastIdEmployee(listaEmpleados);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+                 controller_ListEmployee
+../main.c:49:17: warning: implicit declaration of function ‘myPause’ [-Wimplicit-function-declaration]
+                 myPause();
+                 ^~~~~~~
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building file: ../utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"utn.d" -MT"utn.o" -o "utn.o" "../utn.c"
+../utn.c: In function ‘utn_getDate’:
+../utn.c:612:13: warning: format not a string literal and no format arguments [-Wformat-security]
+             printf(msg);
+             ^~~~~~
+../utn.c: In function ‘utn_getEdad’:
+../utn.c:644:13: warning: format not a string literal and no format arguments [-Wformat-security]
+             printf(msg);
+             ^~~~~~
+Finished building: ../utn.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+./main.o: En la función `main':
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:28: referencia a `clrscr' sin definir
+makefile:29: recipe for target 'tp3_linux' failed
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:42: referencia a `utn_getInt' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:48: referencia a `controller_lastIdEmployee' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:49: referencia a `myPause' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:54: referencia a `controller_lastIdEmployee' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:55: referencia a `myPause' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:59: referencia a `myPause' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:63: referencia a `myPause' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:67: referencia a `myPause' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:71: referencia a `myPause' sin definir
+./main.o:/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:75: más referencias a `myPause' sin definir a continuación
+collect2: error: ld returned 1 exit status
+make: *** [tp3_linux] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:04:50 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:28:5: warning: implicit declaration of function ‘clrscr’ [-Wimplicit-function-declaration]
+     clrscr();
+     ^~~~~~
+../main.c:42:6: warning: implicit declaration of function ‘utn_getInt’; did you mean ‘utn_getDate’? [-Wimplicit-function-declaration]
+      utn_getInt(&option,"\nSeleccione opcion: ","Opcion invalida",1,10,10);
+      ^~~~~~~~~~
+      utn_getDate
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+./main.o: En la función `main':
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:28: referencia a `clrscr' sin definir
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:42: referencia a `utn_getInt' sin definir
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'tp3_linux' failed
+make: *** [tp3_linux] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:05:40 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:28:5: warning: implicit declaration of function ‘clrscr’ [-Wimplicit-function-declaration]
+     clrscr();
+     ^~~~~~
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+./main.o: En la función `main':
+/home/sergio/Documentos/eclipse_tp3/tp3_linux/Debug/../main.c:28: referencia a `clrscr' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [tp3_linux] Error 1
+makefile:29: recipe for target 'tp3_linux' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+01:05:52 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+01:05:54 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+01:06:11 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+01:06:12 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+01:07:01 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+01:07:04 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+22:11:33 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building file: ../utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"utn.d" -MT"utn.o" -o "utn.o" "../utn.c"
+../utn.c: In function ‘utn_getDate’:
+../utn.c:612:13: warning: format not a string literal and no format arguments [-Wformat-security]
+             printf(msg);
+             ^~~~~~
+../utn.c: In function ‘utn_getEdad’:
+../utn.c:644:13: warning: format not a string literal and no format arguments [-Wformat-security]
+             printf(msg);
+             ^~~~~~
+Finished building: ../utn.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+22:12:14 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"utn.d" -MT"utn.o" -o "utn.o" "../utn.c"
+Finished building: ../utn.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+22:12:38 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+22:13:22 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+22:13:25 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+22:13:58 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+22:14:00 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+22:19:15 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+22:19:18 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+22:21:29 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+22:21:32 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+22:23:40 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+22:23:42 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+23:16:10 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+23:16:12 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+23:17:03 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+23:17:05 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+23:19:33 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:48:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("\nCargando lista",controller_loadFromText("data.csv",listaEmpleados));
+                        ^~~~~~~~~~~~~~~~~~
+../main.c:52:21: warning: too many arguments for format [-Wformat-extra-args]
+              printf("\nCargando lista binaria",controller_loadFromBinary("data.bin", listaEmpleados));
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:26:9: warning: unused variable ‘controller’ [-Wunused-variable]
+     int controller;
+         ^~~~~~~~~~
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+23:19:52 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:47:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("\nCargando lista",controller_loadFromText("data.csv",listaEmpleados));
+                        ^~~~~~~~~~~~~~~~~~
+../main.c:51:21: warning: too many arguments for format [-Wformat-extra-args]
+              printf("\nCargando lista binaria",controller_loadFromBinary("data.bin", listaEmpleados));
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+23:21:38 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+23:21:41 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+23:28:09 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.o" -o "Controller.o" "../Controller.c"
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.o" -o "Employee.o" "../Employee.c"
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.o" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+23:28:14 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+23:30:02 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+23:30:05 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+23:35:28 **** Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/sergio/Documentos/eclipse_tp3/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+23:35:31 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.

@@ -1,0 +1,6 @@
+23:35:31 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+make: No se hace nada para 'all'.
+
+23:35:31 Build Finished. 0 errors, 0 warnings. (took 132ms)
+
